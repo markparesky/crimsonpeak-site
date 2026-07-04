@@ -34,7 +34,7 @@
   .logo { display: block; height: 28px; width: auto; }
 
   /* Sections */
-  section, header.hero { border-bottom: 1px solid #E3E3E3; }
+  section, header.hero { border-bottom: 1px solid #E3E3E3; scroll-margin-top: 80px; }
   .section-inner { padding-top: 96px; padding-bottom: 96px; display: flex; flex-wrap: wrap; gap: 40px 72px; }
   .section-label-col { flex: 0 0 160px; }
   .section-label {
@@ -91,6 +91,27 @@
   .footer-legal { border-top: 1px solid #E3E3E3; padding-top: 28px; font-size: 13px; color: #888888; }
   .footer-legal p { margin: 0; }
   .footer-legal p + p { margin-top: 10px; max-width: 680px; line-height: 1.6; }
+
+  /* Mobile */
+  @media (max-width: 720px) {
+    .container { padding-left: 20px; padding-right: 20px; }
+    .nav-inner { height: 60px; }
+    .logo { height: 20px; }
+    .nav-links { gap: 16px; }
+    .nav-links a { font-size: 11.5px; letter-spacing: 0.05em; }
+    section, header.hero { scroll-margin-top: 60px; }
+    .hero-inner { padding-top: 64px; }
+    h1 { font-size: 27px; margin-bottom: 64px; line-height: 1.42; }
+    .section-inner { padding-top: 56px; padding-bottom: 56px; gap: 14px 72px; }
+    .section-label-col { flex: 0 0 100%; }
+    .section-label { margin-top: 0; }
+    .lede { font-size: 21px; margin-bottom: 20px; }
+    .group { margin-bottom: 48px; }
+    .entry-grid { gap: 28px; }
+    .values-grid { gap: 28px; }
+    footer .footer-inner { padding-top: 56px; padding-bottom: 36px; }
+    .footer-logo { height: 22px; margin-bottom: 40px; }
+  }
 </style>
 </head>
 <body>
